@@ -1,0 +1,31 @@
+{
+  "name": "SSR-React",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samatar26/SSR-React.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Samatar26/SSR-React/issues"
+  },
+  "homepage": "https://github.com/Samatar26/SSR-React#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.17.0",
+    "eslint-config-recommended": "^2.0.0",
+    "eslint-plugin-react": "^7.6.1"
+  }
+}

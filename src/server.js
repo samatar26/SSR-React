@@ -2,12 +2,13 @@ const express = require('express')
 
 //Middleware
 const notFound = require('./middleware/notFound')
+const render = require('./middleware/render')
 
 const app = express()
 
 app.disable('x-powered-by')
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/', render('home'))
 
 //Catch 404's
 app.use(notFound)

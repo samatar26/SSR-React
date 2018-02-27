@@ -18,6 +18,8 @@ module.exports = view =>
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>${content.title || 'ssr-react'}</title>
         <style>${content.styleTags}</style>
+        <link rel="preload" href="//localhost:8084/assets/js/home.js" as="script"/>
+        <script src="//localhost:8084/assets/js/home.js" defer></script>
     </head>
     <body>
         <div id="page">${content.DOM}</div>

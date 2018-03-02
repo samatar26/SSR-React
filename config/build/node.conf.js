@@ -2,6 +2,7 @@ const path = require('path')
 const { DefinePlugin } = require('webpack')
 
 module.exports = {
+  watch: true,
   entry: {
     home: path.resolve(
       __dirname,
@@ -36,6 +37,14 @@ module.exports = {
               },
             ],
             'react',
+          ],
+          plugins: [
+            [
+              'styled-components',
+              {
+                ssr: true,
+              },
+            ],
           ],
         },
       },

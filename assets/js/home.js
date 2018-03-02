@@ -18133,17 +18133,16 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Container = undefined;
 
-var _templateObject = _taggedTemplateLiteral(['\n  font-size: 20px;\n'], ['\n  font-size: 20px;\n']);
-
 var _styledComponents = __webpack_require__(29);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
-var Container = exports.Container = _styledComponents2.default.div(_templateObject);
+var Container = /*#__PURE__*/exports.Container = _styledComponents2.default.div.withConfig({
+  displayName: 'indexstyles__Container',
+  componentId: 's1bm013s-0'
+})(['font-size:20px;font-weight:bold;']);
 
 /***/ }),
 /* 29 */

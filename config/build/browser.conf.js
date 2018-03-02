@@ -25,7 +25,24 @@ module.exports = {
         include: [path.resolve(__dirname, '..', '..', 'client')],
         loader: 'babel-loader',
         options: {
-          presets: [['env'], 'react'],
+          presets: [
+            [
+              'env',
+              {
+                loose: true,
+                modules: false,
+              },
+            ],
+            'react',
+          ],
+          plugins: [
+            [
+              'styled-components',
+              {
+                ssr: true,
+              },
+            ],
+          ],
         },
       },
     ],
